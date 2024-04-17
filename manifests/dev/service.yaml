@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    name: gh-nodejs-app2
-  name: gh-nodejs-app2-svc
-  namespace: dev
+    name: jifca-nodejs-app2
+  name: jifca-nodejs-app2-svc
+  namespace: jifca
 spec:
   type: LoadBalancer
   selector:
-    app: gh-nodejs-app2
+    app: jifca-nodejs-app2
   ports:
   - name: http
     protocol: TCP
