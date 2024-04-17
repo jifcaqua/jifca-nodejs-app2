@@ -102,7 +102,7 @@ jobs:
             --access-token "${{ github.token }}" \
             --aqua-key "${{ secrets.AQUA_KEY }}" \
             --aqua-secret "${{ secrets.AQUA_SECRET }}" \
-            --cspm-url "${{$CSPM_URL}}" \
+            --cspm-url "${{env.CSPM_URL}}" \
             --artifact-path "$DOCKER_REPOSITORY/$IMAGE_NAME:$IMAGE_TAG"
 
             # The docker image name:tag of the newly built image
