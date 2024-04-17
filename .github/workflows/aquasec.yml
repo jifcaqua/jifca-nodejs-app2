@@ -1,4 +1,4 @@
-name: GH NODEJS APP2 
+name: GHji NODEJS APP2 
 on:
   push:
     branches:
