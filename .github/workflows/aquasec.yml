@@ -40,8 +40,8 @@ jobs:
           AQUA_KEY: ${{ secrets.AQUA_KEY }}
           AQUA_SECRET: ${{ secrets.AQUA_SECRET }}
           GITHUB_TOKEN: ${{ github.token }}
-          AQUA_URL: $AQUA_URL
-          CSPM_URL: $CSPM_URL
+          AQUA_URL: ${{env.AQUA_URL}}
+          CSPM_URL: ${{env.CSPM_URL}}
           TRIVY_RUN_AS_PLUGIN: 'aqua'
           
   CI-Build:
