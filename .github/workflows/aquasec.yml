@@ -11,7 +11,7 @@ on:
 env:
    DOCKER_REPOSITORY: jiaguado # name of Docker Hub ID
    IMAGE_NAME: jifca-nodejs-app2
-   IMAGE_TAG: ${{ github.run_number }} # $GITHUB_RUN_NUMBER
+   IMAGE_TAG: ${{ github.run_number }} # $GITHUB_RUN_Number
    AQUA_URL: https://api.eu-1.supply-chain.cloud.aquasec.com
    CSPM_URL: https://eu-1.api.cloudsploit.com
 
