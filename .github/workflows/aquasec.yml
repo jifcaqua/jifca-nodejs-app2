@@ -1,4 +1,4 @@
-name: GHji NODEJS APP2 
+name: GH NODEJS APP2 
 on:
   push:
     branches:
@@ -12,6 +12,8 @@ env:
    DOCKER_REPOSITORY: aquasaemea # name of Docker Hub ID
    IMAGE_NAME: gh-nodejs-app2
    IMAGE_TAG: ${{ github.run_number }} # $GITHUB_RUN_NUMBER
+   AQUA_URL: https://api.eu-1.supply-chain.cloud.aquasec.com
+   CSPM_URL: https://eu-1.api.cloudsploit.com
 
 jobs:
   CI-Code:
@@ -38,6 +40,8 @@ jobs:
           AQUA_KEY: ${{ secrets.AQUA_KEY }}
           AQUA_SECRET: ${{ secrets.AQUA_SECRET }}
           GITHUB_TOKEN: ${{ github.token }}
+          AQUA_URL: $AQUA_URL
+          CSPM_URL: $CSPM_URL
           TRIVY_RUN_AS_PLUGIN: 'aqua'
           
   CI-Build:
