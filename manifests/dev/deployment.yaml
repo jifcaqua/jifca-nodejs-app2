@@ -2,14 +2,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gh-nodejs-app2
-  namespace: dev
+  namespace: jifca
   labels:
-    app: gh-nodejs-app2
+    app: jifca-nodejs-app2
     env: dev
 spec:
   selector:
     matchLabels:
-      app: gh-nodejs-app2
+      app: jifca-nodejs-app2
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -19,10 +19,10 @@ spec:
   template:
     metadata:
       labels:
-        app: gh-nodejs-app2
+        app: jifca-nodejs-app2
     spec:
       containers:
-      - name: gh-nodejs-app2
+      - name: jifca-nodejs-app2
         image: {{ IMAGE_CONTAINER }}
         #image: docker.io/aquasaemea/gh-nodejs-app2:latest
         imagePullPolicy: Always
