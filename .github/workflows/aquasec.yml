@@ -131,7 +131,7 @@ jobs:
         with:
            method: kubeconfig
            kubeconfig: ${{ secrets.KUBECONFIG_ANDRES }}
-           context: emea-aguisado-test
+           context: TPMCluster
            
       #- name: Deploying to Dev
       #  uses: azure/k8s-deploy@v4 
