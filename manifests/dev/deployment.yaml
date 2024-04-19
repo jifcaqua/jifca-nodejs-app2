@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gh-nodejs-app2
+  name: jifca-nodejs-app2
   namespace: jifca
   labels:
     app: jifca-nodejs-app2
